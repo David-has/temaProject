@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="toggle" id="toggle">
+      <ion-icon name="card-outline"></ion-icon>
+    </div>
+    <div class="container">
+        <div class="img">
+            <ion-icon name="camera-outline"></ion-icon>
+            <img
+            src="./img/AAAABS3SWmuS_rXhrUaxPikY5cxBWPlWXkBkxBl0pxHz5wry-uW9acogqd1RYidnefQZgrdlLpRdaLJc8IXSmay1MPr6uoT8uP6hjkmf5jrrscv8qQAO-LRJLQeZ.jpg"
+            alt=""
+            />
+        </div>
+        <div class="information">
+            <h2>Seven13</h2>
+            <div class="buttons">
+            <div class="email">
+                <ion-icon name="mail-outline"></ion-icon>
+                Email
+            </div>
+            <div class="email">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                Linkedin
+            </div>
+            </div>
+            <div class="about">
+            <p href="">About</p>
+            <span>
+                I am a frontend developer with a particular interest in making
+                things simple and automating daily tasks.
+            </span>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="icons">
+            <ion-icon class="logo" name="logo-twitter"></ion-icon>
+            <ion-icon class="logo" name="logo-facebook"></ion-icon>
+            <ion-icon class="logo" name="logo-instagram"></ion-icon>
+            <ion-icon class="logo" name="logo-github"></ion-icon>
+            </div>
+        </div>
+        <div class="mes" id="message">
+            <ion-icon
+            id="chat"
+            class="chat"
+            name="chatbox-ellipses-outline"
+            ></ion-icon>
+            <form action="">
+                <input type="text" placeholder="Mess...">
+                <ion-icon class="arrow" name="arrow-forward-outline"></ion-icon>
+                </input>
+            </form>
+        </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    
+    <script>
+      let toggle = document.getElementById("toggle");
+      let container = document.querySelector(".container");
+      toggle.onclick = function(){
+        container.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
